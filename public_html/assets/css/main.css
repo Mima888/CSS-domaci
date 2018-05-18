@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+#sitting-order {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sitting-order td {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+﻿#sitting-order tbody tr:nth-child(even) td:nth-child(even), #sitting-order tbody tr:nth-child(odd) td:nth-child(odd) {
+  background: white;
+}
+ #sitting-order tbody tr:nth-child(odd) td:nth-child(even), #sitting-order tbody tr:nth-child(even) td:nth-child(odd) {
+  background: #feddb8;
+}
+
+#sitting-order tbody td:nth-child(3), #sitting-order tbody td:nth-child(6)  {
+    visibility: hidden;
+}
+
+#sitting-order tfoot {
+    visibility: hidden;
+}
+
+#sitting-order tfoot td:nth-child(4) {
+    visibility: visible;
+    background: #fae4cc;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#students-list {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+#students-list th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#students-list thead th {
+    border-top: 4px double #888;
+    border-bottom: 4px double #888;
+}
+
+#students-list tbody tr {
+    border-bottom: 1px solid #888;
+}
+
+#students-list tbody tr:last-child {
+    border-bottom: 4px double #888;
+}
+
+#students-list tbody tr:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.news {
+    width: 600px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(#fff, #eee);
+}
+
+.news .title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #159;
+}
+
+.news .description {
+    color: #333;
+}
+
+.time {
+    margin: 0;
+    color: #aaa;
+    text-align: right;
+}
+
+.advertising {
+    width: 400px;
+    margin: 20px;
+    
+}
+
+.advertising .title {
+    font-size: 12px;
+    color: #395;
+}
+
+.advertising .description {
+    color: #555;
+    font-size: 11px;
+}
+
